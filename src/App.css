@@ -1,38 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Jost|Lato|Noto+Sans+JP|Open+Sans|Roboto|Roboto+Condensed|Roboto+Mono&display=swap');
+
 .App {
-  text-align: center;
+	text-align: center;
+	margin-top: 35px;
+
+	font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	text-align: center;
+	background: #100e0f;
+	background-image: url('./black-hand.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+	font-weight: 100;
+}
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+	color: #f2f2f2;
+	font-weight: 600;
+	font-size: 40px;
+	margin: 40px 0px 20px;
+
+	width: 10vw;
+	line-height: 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#clockdiv {
+	font-family: sans-serif;
+	color: #2a363b;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#clockdiv > div {
+	padding: 10px;
+	border-radius: 3px;
+	background: #333333;
+	display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+#clockdiv div > span {
+	padding: 15px;
+	border-radius: 3px;
+	background: #f2f2f2;
+	display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.smalltext {
+	padding-top: 5px;
+	font-size: 16px;
+	color: white;
+}
+
+.img-container {
+	padding: 20px;
+}
+
+img {
+	height: 100px;
+	width: 100px;
 }
